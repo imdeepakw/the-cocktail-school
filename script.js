@@ -10,3 +10,7 @@
 //3- Also the measurement of the ingredients used
 
 document.querySelector('.getDrink').addEventListener('click', getDrink)
+
+function getDrink(){
+    let drink = document.querySelector('input').value
+}
