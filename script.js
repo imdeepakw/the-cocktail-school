@@ -11,6 +11,7 @@
 
 document.querySelector('.getDrink').addEventListener('click', getDrink)
 document.querySelector('.nextDrink').addEventListener('click', nextDrink)
+document.querySelector('.previousDrink').addEventListener('click', prevDrink)
 let i = 0
 function getDrink(){
     let drink = document.querySelector('input').value
@@ -28,5 +29,9 @@ function getDrink(){
 }
 function nextDrink(){
   i++
+  getDrink()
+}
+function prevDrink(){
+  i--
   getDrink()
 }
